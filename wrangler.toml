@@ -1,3 +1,6 @@
 name = "delta-webhook-worker"
-main = "src/index.js"
+type = "javascript"
 compatibility_date = "2025-06-20"
+
+[observability.logs]
+enabled = true
