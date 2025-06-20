@@ -1,7 +1,7 @@
 {
-  "title": "🎉 Assistant Memory Hook Test",
+  "title": "✅ Live Sync Test — Assistant Memory",
   "changes": [
-    "This is a live sync test to confirm OpenAI Assistant received the delta.",
-    "Everything from GitHub → Cloudflare → Assistant memory is now active."
+    "Testing the end-to-end sync from local Git commit to Assistant memory.",
+    "If this message appears in OpenAI Threads, everything is working."
   ]
 }
