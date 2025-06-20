@@ -1,1 +1,26 @@
+name: Push Delta to Cloudflare Worker
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  post-delta:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Check for delta.json
+        run: |
+          if [ ! -f delta.json ]; then
+            echo "No delta.json found, skipping."
+            exit 0
+          fi
+
+      - name: Send delta.json to Cloudflare Worker
+        run: |
+          curl -X POST https://delta-webhook-worker.jskinz2083.workers.dev \
+            -H "Content-Type: application/json" \
+            --data-binary @delta.json
 
