@@ -8,11 +8,9 @@ export default {
     const data = await request.json();
     console.log("Received delta:", JSON.stringify(data, null, 2));
 
+    // Use injected secrets (Cloudflare-style, not process.env)
     const apiKey = OPENAI_API_KEY;
-const assistantId = ASSISTANT_ID;
-
-
-
+    const assistantId = ASSISTANT_ID;
 
     try {
       // 1. Create a new thread
@@ -60,5 +58,3 @@ const assistantId = ASSISTANT_ID;
     });
   }
 };
-
-
