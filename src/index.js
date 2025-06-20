@@ -8,8 +8,9 @@ export default {
     const data = await request.json();
     console.log("Received delta:", JSON.stringify(data, null, 2));
 
-    const assistantId = ASSISTANT_ID;
-const apiKey = OPENAI_API_KEY;
+    const apiKey = OPENAI_API_KEY;
+const assistantId = ASSISTANT_ID;
+
 
 
 
@@ -59,4 +60,5 @@ const apiKey = OPENAI_API_KEY;
     });
   }
 };
+
 
