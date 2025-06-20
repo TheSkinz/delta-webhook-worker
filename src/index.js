@@ -8,8 +8,9 @@ export default {
     const data = await request.json();
     console.log("Received delta:", JSON.stringify(data, null, 2));
 
-    const apiKey = process.env.OPENAI_API_KEY;
-    const assistantId = process.env.ASSISTANT_ID;
+   const assistantId = ASSISTANT_ID;
+const apiKey = OPENAI_API_KEY;
+
 
     try {
       // 1. Create a new thread
