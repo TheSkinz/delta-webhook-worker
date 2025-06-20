@@ -1,7 +1,7 @@
 {
-  "title": "Webhook Test",
+  "title": "🎉 Assistant Memory Hook Test",
   "changes": [
-    "This was automatically posted from GitHub",
-    "Everything works if you’re seeing this!"
+    "This is a live sync test to confirm OpenAI Assistant received the delta.",
+    "Everything from GitHub → Cloudflare → Assistant memory is now active."
   ]
 }
